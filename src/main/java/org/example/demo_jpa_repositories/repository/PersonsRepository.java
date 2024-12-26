@@ -25,5 +25,8 @@ public interface PersonsRepository extends JpaRepository<Persons, Integer> {
     // Метод для получения Persons по имени и фамилии, возвращающий Optional
     Optional<Persons> findByNameAndSurname(String name, String surname);
 
+    // Метод для получения Persons по имени, возвращающий Optional
+    Optional<Persons> findByName(String name);
+
 }
 

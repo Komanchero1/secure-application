@@ -3,7 +3,7 @@ package org.example.demo_jpa_repositories.entity;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.IdClass;
-import lombok.ToString;
+
 
 
 //класс-сущность JPA, которая представляет собой объект в базе данных
@@ -42,10 +42,12 @@ public class Persons {
     public String toString() {
         return name +" " + surname + " возраст: " +
                 age + ", " + "номер телефона: " + phoneNumber +
-                              ", проживает в " + cityOfResidence + "\n";
+                              ", проживает в " + cityOfResidence + " : "  +  "\n";
 
     }
 
+
+    //геттеры и сеттеры
     public void setName(String name) {
         this.name = name;
     }
